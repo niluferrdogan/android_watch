@@ -5,8 +5,13 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.wearable.activity.WearableActivity;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.bsobe.android_watch.main.MainPresenter;
+import com.example.bsobe.android_watch.main.MainPresenterImpl;
+import com.example.bsobe.android_watch.main.MainView;
 import com.example.bsobe.android_watch.retrofit.CurrencyResources;
 
 import java.util.ArrayList;
@@ -16,10 +21,11 @@ import com.example.bsobe.android_watch.adapters.CurrencyRecyclerAdapter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends WearableActivity implements MainView{
+public class MainActivity extends WearableActivity implements MainView {
 
     private MainPresenter mPresenter;
     private CurrencyRecyclerAdapter mCurrencyRecyclerAdapter;
+    private ProgressBar mProgress;
 
     @BindView(R.id.recycler_view)
     RecyclerView recyclerView;
@@ -44,16 +50,18 @@ public class MainActivity extends WearableActivity implements MainView{
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+
+        mProgress= findViewById(R.id.progress);
     }
 
     @Override
     public void showProgress() {
-
+        mProgress.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void hideProgress() {
-
+        mProgress.setVisibility(View.GONE);
     }
 
     @Override

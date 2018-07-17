@@ -60,7 +60,6 @@ public class CurrencyRecyclerAdapter  extends RecyclerView.Adapter<CurrencyRecyc
         }
 
         public void bindPharmacy(CurrencyResources currency) {
-
             mdCurrencyListView.setUiParameter(currency);
         }
     }

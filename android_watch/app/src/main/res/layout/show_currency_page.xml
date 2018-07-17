@@ -9,7 +9,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
         android:layout_marginStart="13dp"
-        android:contentDescription="@string/currency_icon"/>
+        android:contentDescription="@string/currency_icon"
+        android:src="@drawable/flag_aud"/>
 
     <TextView
         android:id="@+id/txt_currency_name"
@@ -21,7 +22,8 @@
         android:textColor="#ffffff"
         android:letterSpacing="0.03"
         android:layout_toEndOf="@+id/img_logo"
-        android:contentDescription="@string/currency_type"/>
+        android:contentDescription="@string/currency_type"
+        android:text="TRY"/>
 
     <TextView
         android:id="@+id/txt_tr_currency_name"
@@ -33,7 +35,8 @@
         android:layout_marginStart="11dp"
         android:textSize="12.5sp"
         android:textColor="#fa124e"
-        android:letterSpacing="0.05"/>
+        android:letterSpacing="0.05"
+        android:text="Türk Lirası"/>
 
     <TextView
         android:id="@+id/txt_buying"
@@ -41,10 +44,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_tr_currency_name"
         android:layout_marginTop="19.5dp"
+        android:layout_marginLeft="62.5dp"
         android:textSize="12.5sp"
         android:textColor="#fa124e"
         android:letterSpacing="0.03"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:text="Alış"/>
 
     <TextView
         android:id="@+id/txt_buying_cost"
@@ -56,6 +61,7 @@
         android:layout_below="@+id/txt_buying"
         android:layout_marginTop="5.5dp"
         android:layout_marginStart="32.5dp"
+        android:text="3.4946"
         />
 
 </RelativeLayout>

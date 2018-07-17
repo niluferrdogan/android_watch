@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -38,9 +39,15 @@ public class MdCurrencyListView  extends LinearLayout{
     }
 
     private void init(Context context) {
+
+
+
+
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.currency_list_custom_view, this, true);
+
+
 
         name = findViewById(R.id.txt_name);
         address = findViewById(R.id.txt_adress);
@@ -51,8 +58,8 @@ public class MdCurrencyListView  extends LinearLayout{
     }
 
     public void setUiParameter(CurrencyResources currency) {
-        name.setText(currency.adi);
+    /*    name.setText(currency.adi);
         address.setText(currency.acikAdres);
-        phone.setText(currency.telefon);
+        phone.setText(currency.telefon);*/
     }
 }
