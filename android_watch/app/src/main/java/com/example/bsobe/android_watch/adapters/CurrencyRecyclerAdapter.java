@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.bsobe.android_watch.Currencies;
+import com.example.bsobe.android_watch.CurrencyList;
 import com.example.bsobe.android_watch.R;
 import com.example.bsobe.android_watch.retrofit.CurrencyResources;
 
@@ -20,11 +22,10 @@ import com.example.bsobe.android_watch.customviews.MdCurrencyListView;
 
 public class CurrencyRecyclerAdapter  extends RecyclerView.Adapter<CurrencyRecyclerAdapter.ViewHolder> {
 
-    private ArrayList<CurrencyResources> currencyResources = new ArrayList<>();
+    private ArrayList<CurrencyList> currencyResources = new ArrayList<>();
     private Context mContext;
-    private TextView deneme;
 
-    public CurrencyRecyclerAdapter(ArrayList<CurrencyResources> currencyResources, Context context) {
+    public CurrencyRecyclerAdapter(ArrayList<CurrencyList> currencyResources, Context context) {
         mContext = context;
         this.currencyResources = currencyResources;
     }
@@ -32,6 +33,7 @@ public class CurrencyRecyclerAdapter  extends RecyclerView.Adapter<CurrencyRecyc
     @Override
     public CurrencyRecyclerAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list, parent, false);
+
         return new ViewHolder(view);
     }
 
@@ -59,8 +61,10 @@ public class CurrencyRecyclerAdapter  extends RecyclerView.Adapter<CurrencyRecyc
 
         }
 
-        public void bindPharmacy(CurrencyResources currency) {
-            mdCurrencyListView.setUiParameter(currency);
+        public void bindPharmacy(CurrencyList currencyList) {
+            mdCurrencyListView.setUiParameter(currencyList);
         }
+
+
     }
 }

@@ -1,5 +1,7 @@
 package com.example.bsobe.android_watch;
 
+import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,7 +14,6 @@ import android.widget.Toast;
 import com.example.bsobe.android_watch.main.MainPresenter;
 import com.example.bsobe.android_watch.main.MainPresenterImpl;
 import com.example.bsobe.android_watch.main.MainView;
-import com.example.bsobe.android_watch.retrofit.CurrencyResources;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,8 +66,8 @@ public class MainActivity extends WearableActivity implements MainView {
     }
 
     @Override
-    public void setItems(List<CurrencyResources> items) {
-        mCurrencyRecyclerAdapter = new CurrencyRecyclerAdapter((ArrayList<CurrencyResources>) items,this);
+    public void setItems(List<CurrencyList> items) {
+        mCurrencyRecyclerAdapter = new CurrencyRecyclerAdapter((ArrayList<CurrencyList>) items,this);
         recyclerView.setAdapter(mCurrencyRecyclerAdapter);
     }
 
@@ -74,5 +75,7 @@ public class MainActivity extends WearableActivity implements MainView {
     public void showMessage(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
+
+
 
 }

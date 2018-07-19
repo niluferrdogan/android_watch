@@ -8,4 +8,8 @@
     <string name="logo">logo</string>
     <string name="currency_icon">currency_icon</string>
     <string name="currency_type">currency_type</string>
+    <string name="alis">Alış</string>
+    <string name="str_alis">ALIŞ</string>
+    <string name="tl">TL</string>
+    <string name="satis">SATIŞ</string>
 </resources>

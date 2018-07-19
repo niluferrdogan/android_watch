@@ -8,6 +8,8 @@ import com.example.bsobe.android_watch.R;
 
 public enum Flags {
 
+    usd("AmericanDollar",R.drawable.flag_usd),
+    gbp("PoundSterling",R.drawable.gbp_copy),
     aud("AustrallianDollar", R.drawable.flag_aud),
     cad("CanadianDollar", R.drawable.flag_cad),
     chf("SwissFranc", R.drawable.flag_chf),
