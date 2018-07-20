@@ -32,9 +32,10 @@ public class CurrencyRecyclerAdapter  extends RecyclerView.Adapter<CurrencyRecyc
 
     @Override
     public CurrencyRecyclerAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list, parent, false);
 
-        return new ViewHolder(view);
+            return new ViewHolder(view);
+
     }
 
     @Override

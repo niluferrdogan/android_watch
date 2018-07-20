@@ -21,7 +21,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class APIClient {
 
     private static Retrofit retrofit = null;
-    private static String BASE_URL= "http://janusdev.denizbank.com/api/";
+    private static String BASE_URL= "http://januspre.denizbank.com/api/";
 
    // private static String BASE_URL= "http://ebelediye.gebze.bel.tr/NicoExporter/exp/eczaneServis/";
 

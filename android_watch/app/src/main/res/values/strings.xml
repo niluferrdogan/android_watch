@@ -12,4 +12,6 @@
     <string name="str_alis">ALIŞ</string>
     <string name="tl">TL</string>
     <string name="satis">SATIŞ</string>
+    <string name="usd">USD</string>
+    <string name="img_logo">img logo</string>
 </resources>

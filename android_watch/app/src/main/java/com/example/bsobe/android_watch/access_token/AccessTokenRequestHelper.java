@@ -13,7 +13,7 @@ public class AccessTokenRequestHelper {
 
     public AccesTokenRequest generateStartAppRequest(String localeVersion, String appVersion) {
         AccesTokenRequest startAppRequest = new AccesTokenRequest();
-        startAppRequest.localeVersion = "Lv4gNYeY07PNA375o5MhaMmxVJyOSkKphS7AgFN4a8M";
+        startAppRequest.localeVersion = "DH2NWnY0NKq4AxUqV7P9tKkWnEAqkpKeL2HM0PHEolE";
         startAppRequest.device = generateDeviceInformation();
         startAppRequest.appVersion = "1.0";
         return startAppRequest;

@@ -1,8 +1,5 @@
 package com.example.bsobe.android_watch.main;
 
-import android.content.Context;
-import android.os.Build;
-
 import com.example.bsobe.android_watch.Currencies;
 import com.example.bsobe.android_watch.CurrencyList;
 import com.example.bsobe.android_watch.Destinations;
