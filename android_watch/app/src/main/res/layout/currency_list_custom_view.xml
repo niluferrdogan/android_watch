@@ -2,17 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
-    android:layout_marginLeft="14.5dp"
+    android:layout_marginStart="14.5dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:clickable="true"
-    android:id="@+id/layout_custom_view">
+    android:id="@+id/layout_custom_view"
+    android:focusable="true">
 
     <ImageView
         android:id="@+id/img_currencyFlag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp" />
+        android:layout_marginTop="14dp"
+        android:contentDescription="@string/currency_flag" />
 
     <LinearLayout
         android:layout_width="wrap_content"

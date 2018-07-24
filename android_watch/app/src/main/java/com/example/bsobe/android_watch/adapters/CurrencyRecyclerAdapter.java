@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.example.bsobe.android_watch.Currencies;
 import com.example.bsobe.android_watch.CurrencyList;
+import com.example.bsobe.android_watch.Header;
 import com.example.bsobe.android_watch.R;
 import com.example.bsobe.android_watch.retrofit.CurrencyResources;
 
@@ -24,6 +25,7 @@ public class CurrencyRecyclerAdapter  extends RecyclerView.Adapter<CurrencyRecyc
 
     private ArrayList<CurrencyList> currencyResources = new ArrayList<>();
     private Context mContext;
+    private Header mHeader;
 
     public CurrencyRecyclerAdapter(ArrayList<CurrencyList> currencyResources, Context context) {
         mContext = context;
